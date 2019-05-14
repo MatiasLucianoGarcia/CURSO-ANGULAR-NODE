@@ -8,7 +8,7 @@
     <p *ngIf='project'>{{project.category}}</p>
     <p>
        <a href="#" class="button-edit">Editar</a>
-       <a href="#" class="button-delete">Borrar</a>
+       <a (click)="deleteProject(project._id)" class="button-delete">Borrar</a>
     </p>
   </div>
 </div>
