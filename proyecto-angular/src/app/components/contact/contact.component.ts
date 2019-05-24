@@ -9,22 +9,14 @@ declare var $: any;
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
+  public widthSlider:number;
+  public anchuraToSlider:number;
   constructor() { }
 
-  ngOnInit() {
-    $("#logo").click(function(e){
-      $("header").css("background","green")
-                 .css("height","50px");
-    });
+  ngOnInit(){}
 
-    $(".galeria").bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 800,
-      speed: 500,
-      auto:true
-    });
-  }
-
+  cargarSlider(){
+    this.anchuraToSlider= null;
+    this.anchuraToSlider=this.widthSlider;}
+    
 }
